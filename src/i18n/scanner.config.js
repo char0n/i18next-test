@@ -29,12 +29,12 @@ module.exports = {
       extensions: ['.js', '.jsx'],
       fallbackKey: (ns, value) => value,
     },
-    lngs: ['en'],
+    lngs: ['dev'],
     ns: ['feature1', 'translation'],
-    defaultLng: 'en',
+    defaultLng: 'dev',
     defaultNs: 'translation',
     defaultValue: (lng, ns, key) => {
-      if (lng === 'en') {
+      if (lng === 'dev') {
         return key;
       }
       return '__NOT_TRANSLATED__';

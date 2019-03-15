@@ -11,4 +11,5 @@ Issue to scanner has been reported: https://github.com/i18next/i18next-scanner/i
 
 I recommend using `i18nKey` when using `Trans` component.
 
-Repeting scanning overrides the modified values in extracted translations.
+Repeting scanning overrides the modified values in extracted translations,
+we must use `dev` language for scanning/parsing.

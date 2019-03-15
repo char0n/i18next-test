@@ -1,5 +1,5 @@
 {
   "Welcome to react": "Welcome to react",
   "hello_message": "Hello <1>World</1>, you have <3>{{count}}</3> unread message.",
-  "hello_message_plural": "Hello <1>World</1>, you have <3>{{count}}</3> unread messages."
+  "hello_message_plural": "Hello <1>World</1>, you have <3>{{count}}</3> unread message."
 }

@@ -5,11 +5,11 @@ import { Trans, withTranslation } from 'react-i18next';
 import * as i18nPropTypes  from '../../i18n/prop-types';
 
 
-const IntlComponent = ({ count, t: _ }) => (
+const IntlComponent = ({ count, t: _, i18n }) => (
   <div>
     <header>{_('feature1:Welcome to react')}</header>
     <main>
-      <Trans i18nKey="feature1:hello_message" count={count}>
+      <Trans i18nKey="feature1:hello_message" count={count} ns="feature1">
         Hello <strong>World</strong>, you have {{count}} unread message.
       </Trans>
     </main>
