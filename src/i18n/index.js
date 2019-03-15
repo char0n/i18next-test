@@ -1,6 +1,6 @@
 import i18n from 'i18next';
 import {initReactI18next} from 'react-i18next';
-// import LanguageDetector from 'i18next-browser-languagedetector';
+import LanguageDetector from 'i18next-browser-languagedetector';
 
 import enFeature1 from '../locales/en/feature1.json';
 import enTranslation from '../locales/en/translation.json';
@@ -16,7 +16,7 @@ const resources = {
 
 i18n
   .use(initReactI18next) // passes i18n down to react-i18next
-//   .use(LanguageDetector)
+  .use(LanguageDetector)
   .init({
     resources,
     lng: "en",

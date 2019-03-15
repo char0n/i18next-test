@@ -7,10 +7,11 @@ const IntlComponent = ({ count, t: _ }) => (
   <div>
     <header>{_('feature1:Welcome to react')}</header>
     <main>
-      <Trans count={count} ns="feature1">
+      <Trans i18nKey="feature1:hello_message" count={count}>
         Hello <strong>World</strong>, you have {{count}} unread message.
       </Trans>
     </main>
+    <footer>{_('This if translated footer')}</footer>
   </div>
 );
 
@@ -20,4 +21,4 @@ IntlComponent.propTypes = {
 };
 
 
-export default withTranslation(['feature1', 'translation'])(IntlComponent);
+export default withTranslation(['translation', 'feature1'])(IntlComponent);
