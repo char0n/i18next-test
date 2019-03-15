@@ -10,3 +10,5 @@ is saying that is supports plural forms but couldn't find a way make it work.
 Issue to scanner has been reported: https://github.com/i18next/i18next-scanner/issues/137
 
 I recommend using `i18nKey` when using `Trans` component.
+
+Repeting scanning overrides the modified values in extracted translations.

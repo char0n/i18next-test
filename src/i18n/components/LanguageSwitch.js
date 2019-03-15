@@ -13,11 +13,19 @@ class LanguageSwitch extends React.Component {
     this.props.i18n.changeLanguage(language);
   };
 
+  switchToCzech = () => {
+    this.switchToLanguage('cs');
+  };
+
+  switchToEnglish = () => {
+    this.switchToLanguage('en');
+  };
+
   render() {
     return (
       <div>
-        <button onClick={this.switchToLanguage.bind(null, 'en')}>English language</button>
-        <button onClick={this.switchToLanguage.bind(null, 'cs')}>Czech language</button>
+        <button onClick={this.switchToEnglish}>English language</button>
+        <button onClick={this.switchToCzech}>Czech language</button>
       </div>
     );
   }

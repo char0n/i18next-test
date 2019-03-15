@@ -4,6 +4,8 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 
 import enFeature1 from '../locales/en/feature1.json';
 import enTranslation from '../locales/en/translation.json';
+import csFeature1 from '../locales/cs/feature1.json';
+import csTranslation from '../locales/cs/translation.json';
 
 // the translations
 // (tip move them in a JSON file and import them)
@@ -11,7 +13,11 @@ const resources = {
   en: {
     feature1: enFeature1,
     translation: enTranslation,
-  }
+  },
+  cs: {
+    feature1: csFeature1,
+    translation: csTranslation,
+  },
 };
 
 i18n
@@ -19,8 +25,9 @@ i18n
   .use(LanguageDetector)
   .init({
     resources,
-    lng: "en",
+    fallbackLng: 'en',
     debug: true,
+    ns: ['translation', 'feature1'],
 
     keySeparator: false, // we do not use keys in form messages.welcome
 
