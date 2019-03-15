@@ -14,11 +14,11 @@ class LanguageSwitch extends React.Component {
   };
 
   switchToCzech = () => {
-    this.switchToLanguage('cs');
+    this.switchToLanguage('cs-CZ');
   };
 
   switchToEnglish = () => {
-    this.switchToLanguage('en');
+    this.switchToLanguage('en-US');
   };
 
   render() {

@@ -2,21 +2,21 @@ import i18n from 'i18next';
 import {initReactI18next} from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
-import enFeature1 from '../locales/en/feature1.json';
-import enTranslation from '../locales/en/translation.json';
-import csFeature1 from '../locales/cs/feature1.json';
-import csTranslation from '../locales/cs/translation.json';
+import enUSFeature1 from '../locales/en-US/feature1.json';
+import enUSTranslation from '../locales/en-US/translation.json';
+import csCZFeature1 from '../locales/cs-CZ/feature1.json';
+import csCZTranslation from '../locales/cs-CZ/translation.json';
 
 // the translations
 // (tip move them in a JSON file and import them)
 const resources = {
-  en: {
-    feature1: enFeature1,
-    translation: enTranslation,
+  'en-US': {
+    feature1: enUSFeature1,
+    translation: enUSTranslation,
   },
-  cs: {
-    feature1: csFeature1,
-    translation: csTranslation,
+  'cs-CZ': {
+    feature1: csCZFeature1,
+    translation: csCZTranslation,
   },
 };
 
@@ -25,7 +25,7 @@ i18n
   .use(LanguageDetector)
   .init({
     resources,
-    fallbackLng: 'en',
+    fallbackLng: 'en-US',
     debug: true,
     ns: ['translation', 'feature1'],
 

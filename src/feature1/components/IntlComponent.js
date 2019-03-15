@@ -5,12 +5,16 @@ import { Trans, withTranslation } from 'react-i18next';
 import * as i18nPropTypes  from '../../i18n/prop-types';
 
 
-const IntlComponent = ({ count, t: _, i18n }) => (
+const Strong = ({ children }) => (
+  <strong>{children}</strong>
+);
+
+const IntlComponent = ({ count, t: _ }) => (
   <div>
     <header>{_('feature1:Welcome to react')}</header>
     <main>
       <Trans i18nKey="feature1:hello_message" count={count} ns="feature1">
-        Hello <strong>World</strong>, you have {{count}} unread message.
+        Hello <Strong>World</Strong>, you have {{count}} unread message.
       </Trans>
       <br />
       <strong>{_('Interpolation example {{count}}', { count })}</strong>
