@@ -1,3 +1,5 @@
 {
+  "Interpolation example {{count}}": "Interpolation example {{count}}",
+  "Interpolation example {{count}}_plural": "Interpolation example {{count}}",
   "This is translated footer": "This is translated footer"
 }

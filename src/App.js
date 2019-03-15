@@ -12,7 +12,9 @@ class App extends Component {
       <div className="App">
         <main>
           <LanguageSwitch />
+          <br />
           <IntlComponent count={3} />
+          <br />
           <IntlComponent count={1} />
         </main>
       </div>

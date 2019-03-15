@@ -12,6 +12,8 @@ const IntlComponent = ({ count, t: _, i18n }) => (
       <Trans i18nKey="feature1:hello_message" count={count} ns="feature1">
         Hello <strong>World</strong>, you have {{count}} unread message.
       </Trans>
+      <br />
+      <strong>{_('Interpolation example {{count}}', { count })}</strong>
     </main>
     <footer>{_('This is translated footer')}</footer>
   </div>

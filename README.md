@@ -13,3 +13,8 @@ I recommend using `i18nKey` when using `Trans` component.
 
 Repeting scanning overrides the modified values in extracted translations,
 we must use `dev` language for scanning/parsing.
+
+
+## Translation
+
+Tool for finding plural forms for specific language.
