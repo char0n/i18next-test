@@ -17,4 +17,8 @@ we must use `dev` language for scanning/parsing.
 
 ## Translation
 
-Tool for finding plural forms for specific language.
+Tool for finding plural forms for specific language. https://jsfiddle.net/jamuhl/3sL01fn0/#tabs=result
+
+## Formatting
+
+Formatting is very primitive and doesn't contain any default formatters implementation.
