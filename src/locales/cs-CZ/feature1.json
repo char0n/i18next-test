@@ -1,6 +1,6 @@
 {
   "Welcome to react": "Vitejte v reactu",
-  "hello_message_0": "AHoj <1>svete</1>, mas <3>{{count}}</3> neprectenou spravu.",
-  "hello_message_1": "AHoj <1>svete</1>, mas <3>{{count}}</3> neprectene spravy.",
-  "hello_message_2": "AHoj <1>svete</1>, mas <3>{{count}}</3> neprectenych spravu."
+  "Hello <1>World</1>, you have {{count}} unread message._0": "AHoj <1>svete</1>, mas <3>{{count}}</3> neprectenou spravu.",
+  "Hello <1>World</1>, you have {{count}} unread message._1": "AHoj <1>svete</1>, mas <3>{{count}}</3> neprectene spravy.",
+  "Hello <1>World</1>, you have {{count}} unread message._2": "AHoj <1>svete</1>, mas <3>{{count}}</3> neprectenych sprav."
 }

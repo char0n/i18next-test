@@ -13,7 +13,7 @@ const IntlComponent = ({ count, t: _ }) => (
   <div>
     <header>{_('feature1:Welcome to react')}</header>
     <main>
-      <Trans i18nKey="feature1:hello_message" count={count} ns="feature1">
+      <Trans count={count} ns="feature1">
         Hello <Strong>World</Strong>, you have {{count}} unread message.
       </Trans>
       <br />
