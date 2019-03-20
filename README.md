@@ -18,7 +18,7 @@ and demonstration `IntlComponent` demonstrates this.
 ## Formatting
 
 Formatting is very primitive and doesn't contain any default formatters implementation.
-I strongly suggest to use native Intl for numbers and dates. I've provided implementation of the 
+I strongly suggest to use native Intl for numbers. For dates we can use moment.js. I've provided implementation of the 
 number formatting function as well as React component for it. I strongly discourage to use formatting
 functionality of i18next that is embeded inside the interpolation strings, but rather format
 numbers and dates before they are interpolated to translation. 
