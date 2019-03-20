@@ -17,7 +17,7 @@
     "build": "react-scripts build",
     "test": "react-scripts tesmot",
     "eject": "react-scripts eject",
-    "i18n:extract:scanner": "i18next-scanner --config ./src/i18n/scanner.config.js",
+    "i18n:extract:scanner": "i18next-scanner --config ./src/i18n/scanner.config.js"
   },
   "eslintConfig": {
     "extends": "react-app"
