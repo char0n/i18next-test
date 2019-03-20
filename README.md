@@ -2,27 +2,23 @@
 
 ## Extracting 
 
-Both parser and scanner does similar job in extracting the translations.
-Both cannot detect the namespace of the Trans component passed as 
-as `ns` prop. Scanner is adding plural forms, parser is not. Parse documentation
-is saying that is supports plural forms but couldn't find a way make it work.
+I recommend using scanner for extracting the strings from codebase.
+It support generating plural form for different languages automtically.
 
-Issue to scanner has been reported: https://github.com/i18next/i18next-scanner/issues/137 (this is already implemented and resolved)
-Additional issue with auto-generating keys is report here: https://github.com/i18next/i18next-scanner/issues/125#issuecomment-473919033
+There are couple of issues with scanner. One has been reported: https://github.com/i18next/i18next-scanner/issues/137 (this is already implemented and resolved)
+Additional issue with auto-generating keys is reported here: https://github.com/i18next/i18next-scanner/issues/125#issuecomment-473919033
+We modified the scanner alghorytm to support intelligent merging, only new keys is added to
+translation files old keys are preserved and not deleted.
 
-I recommend using `i18nKey` when using `Trans` component.
+I would avoid creating surrogate translations keys and let extractor autogenerate
+key for us from the extracted text. The scanner is already configured in this way
+and demonstration `IntlComponent` demonstrates this.
 
-Repeating scanning overrides the modified values in extracted translations,
-we must use `dev` language for scanning/parsing.
-
-
-## Translation
-
-Tool for finding plural forms for specific language. https://jsfiddle.net/jamuhl/3sL01fn0/#tabs=result
 
 ## Formatting
 
 Formatting is very primitive and doesn't contain any default formatters implementation.
-We can use either Intl or numerals.js (Intl prefered) for locale aware formatting. moment.js for formatting
-dates. We'll have to come up with open/closed systems of formatters because the i18next implementation
-is just wrong.
+I strongly suggest to use native Intl for numbers and dates. I've provided implementation of the 
+number formatting function as well as React component for it. I strongly discourage to use formatting
+functionality of i18next that is embeded inside the interpolation strings, but rather format
+numbers and dates before they are interpolated to translation. 
