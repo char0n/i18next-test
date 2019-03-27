@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Trans, withTranslation } from 'react-i18next';
@@ -16,10 +17,10 @@ const IntlComponent = ({ count, t: _ }) => (
     <header>{_('feature1:Welcome to react')}</header>
     <main>
       <Trans count={count} ns="feature1">
-        Hello <Strong>World</Strong>, you have {{count}} unread message.
+        Hello <Strong>World</Strong>, you have {count} unread message.
       </Trans>
       <br />
-      <strong>{_('Interpolation example {{number}}', { number: formatNumber({ style: 'currency', currency: 'EUR' }, count) })}</strong>
+      <strong>{_('Interpolation example {number}', { number: formatNumber({ style: 'currency', currency: 'EUR' }, count) })}</strong>
       <div>
         Formatted number: <FormattedNumber value={count} />
       </div>

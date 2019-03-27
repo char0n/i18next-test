@@ -1,4 +1,4 @@
 {
   "This is translated footer": "Tohle je prelozeny footer",
-  "Interpolation example {{count}}": "Interpolacni priklad {{count}}"
+  "Interpolation example {number}": "Interpolacni priklad {number}"
 }
