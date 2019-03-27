@@ -16,7 +16,7 @@ const FormattedNumber = ({ i18n, t, value, ...intlOptions }) => {
 
 FormattedNumber.propTypes = {
   i18n: i18nPropTypes.i18n.isRequired,
-  t: i18nPropTypes.i18n.isRequired,
+  t: i18nPropTypes.t.isRequired,
 
   value: PropTypes.any.isRequired,
 

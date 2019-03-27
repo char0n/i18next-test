@@ -77,6 +77,7 @@ module.exports = {
   output: 'src/locales',
   options: {
     debug: true,
+    plural: false,
     removeUnusedKeys: false,
     sort: false,
     attr: {
@@ -112,7 +113,6 @@ module.exports = {
     },
     nsSeparator: ':',
     keySeparator: '.',
-    pluralSeparator: '_',
     contextSeparator: '_',
     interpolation: {
       prefix: '{{',
