@@ -1,4 +1,4 @@
 {
-  "Welcome to react": "Welcome to react",
-  "Hello <0>World</0>, you have <1>{count}</1> unread message.": "Hello <0>World</0>, you have <1>{count}</1> unread message."
+    "Welcome to react": "Welcome to react",
+    "Hello <0>World</0>, you have <1>{count}</1> unread message.": "Hello <0>World</0>, you have <1>{count}</1> unread message."
 }

@@ -1,4 +1,4 @@
 {
-  "Welcome to react": "Vitejte v reactu",
-  "Hello <0>World</0>, you have <1>{count}</1> unread message.": "Ahoj <0>Svete</0>, mas <1>{count}</1> neprectenych sprav."
+    "Welcome to react": "Vitejte v reactu",
+    "Hello <0>World</0>, you have <1>{count}</1> unread message.": "Ahoj <0>Svete</0>, mas <1>{count}</1> neprectenych sprav."
 }
