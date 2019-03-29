@@ -15,5 +15,5 @@ glob(path.join(__dirname, '..', '..', 'locales/**/*.json'), (err, files) => {
       console.error(e.toString());
       process.exit(1);
     }
-  })
+  });
 });

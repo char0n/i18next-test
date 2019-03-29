@@ -18,5 +18,5 @@ glob(path.join(__dirname, '..', '..', 'locales/**/*.po'), (err, files) => {
         process.exit(1);
       }
     });
-  })
+  });
 });
