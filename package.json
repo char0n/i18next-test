@@ -9,19 +9,23 @@
     "i18next-icu": "=1.1.2",
     "prop-types": "=15.7.2",
     "ramda": "=0.26.1",
+    "ramda-adjunct": "=2.16.1",
     "react": "=16.8.4",
     "react-dom": "=16.8.4",
     "react-i18next": "=10.4.2",
-    "react-scripts": "2.1.8"
+    "react-scripts": "2.1.8",
+    "validate-po": "=1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts tesmot",
     "eject": "react-scripts eject",
-    "i18n:extract:scanner": "i18next-scanner --config ./src/i18n/scanner.config.js",
-    "i18n:po2json": "node ./src/i18n/scripts/po2json.js",
-    "i18n:json2po": "node ./src/i18n/scripts/json2po.js"
+    "i18n:scanner:extract": "i18next-scanner --config ./src/i18n/scanner.config.js",
+    "i18n:po:validate": "node ./src/i18n/scripts/validate-po.js",
+    "i18n:po:2json": "npm run i18n:po:validate && npm run i18n:json:validate && node ./src/i18n/scripts/po2json.js",
+    "i18n:json:validate": "node ./src/i18n/scripts/validate-json.js",
+    "i18n:json:2po": "npm run i18n:json:validate && npm run i18n:po:validate && node ./src/i18n/scripts/json2po.js"
   },
   "eslintConfig": {
     "extends": "react-app"
